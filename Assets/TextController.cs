@@ -41,6 +41,11 @@ public class TextController : MonoBehaviour {
 			SlideFour ();
 		} else if (Input.GetKey (KeyCode.C) && slideNumber == 4) {
 			SlideFour ();
+		} else if (slideNumber == 5 && (Input.GetKey (KeyCode.D) | Input.GetKey (KeyCode.S) | Input.GetKey (KeyCode.B))) {
+			text.text = "Partyin', partyin' (YEAH!)\n";
+			text.text += "Partyin', partyin' (YEAH!)\n";
+			text.text += "Fun fun fun fun\n";
+			text.text += "Looking forward to the weekend!\n";
 		}
 
 	}
